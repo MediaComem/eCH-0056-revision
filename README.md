@@ -8,7 +8,7 @@ The aim of this repository is to centralise all information related to the vario
 
 ## Agenda
 
-The detailed programme can be found below.
+The detailed programme can be found [below]('## Detailed programme & presentation materials').
 
 ## Schedule
 
