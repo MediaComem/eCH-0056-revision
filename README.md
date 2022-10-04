@@ -1,8 +1,20 @@
 Welcome to the **eCH-0056 Revision** repository.
 
-This resource aims to centralise the presentations and session notes from the various workshops.
+The aim of this repository is to centralise all information related to the various workshops.
 
-## Organisation
+## Location
+
+📌[Haus der Kantone,Speichergasse 6, 3011 Bern](https://test.map.geo.admin.ch/?lang=en&topic=ech&zoom=12.70&crosshair=marker&lon=7.442159509352746&lat=46.950550950909914)
+
+## Agenda
+
+The detailed programme can be found below.
+
+## Schedule
+
+⏰09:30-16:00 
+
+## Detailed programme & presentation materials
 
 | id | date | workshop | links |
 |----|:----:|:--------:|---------------------|
@@ -16,3 +28,5 @@ This resource aims to centralise the presentations and session notes from the va
 | 8 | 27-04-2023 | Reserve 1 |  presentation material <br/> meeting notes |
 | 9 | 25-05-2023 | Reserve 2 |  presentation material <br/> meeting notes |
 | 10 | 20-06-2023 | Reserve 3 |  presentation material <br/> meeting notes |
+
+> **_NOTE:_** For further information, please contact the team [Geostandards.ch](https://geostandards.ch/) ([F.Gottsmann or P. Staub](standardisierung@geostandards.ch))
