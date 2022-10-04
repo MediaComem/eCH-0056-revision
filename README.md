@@ -8,7 +8,7 @@ The aim of this repository is to centralise all information related to the vario
 
 ## Agenda
 
-The detailed programme can be found [below]('## Detailed programme & presentation materials').
+The detailed programme can be found [below](https://mediacomem.github.io/eCH-0056-revision/#detailed-programme--presentation-materials).
 
 ## Schedule
 
