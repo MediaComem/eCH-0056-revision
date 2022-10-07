@@ -54,12 +54,6 @@ class: center, middle
         3.4.9 PC Vote
         3.4.10 Public Release
 ---
-.chart-doughnut[
-| One | Two | Three |
-|-----|-----|-------|
-| 1   | 2   | 3     |
-]
----
 ### 2.3 Requirements for the eCH standardisation process
 <!-- Content to be provided by F.Gottsmann -->
 ---
