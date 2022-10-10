@@ -1,60 +1,752 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Kick-off Meeting</title>
-        <meta charset="utf-8" />
-        <style>
-            @import url(https://fonts.googleapis.com/css?family=Yanone + Kaffeesatz);
-            @import url(https://fonts.googleapis.com/css?family=Droid + Serif:400, 700, 400italic);
-            @import url(https://fonts.googleapis.com/css?family=Ubuntu + Mono:400, 700, 400italic);
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Geostandards.ch,eCH,swisstopo,KGK-CGC,HEIG-VD" />
+    <meta name="description" content="Révision eCH-0056 Profil d'application de géoservices." />
+    <title>Revision eCH-0056</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-            body {
-                font-family: "Droid Serif";
-            }
-            h1,
-            h2,
-            h3 {
-                font-family: "Yanone Kaffeesatz";
-                font-weight: normal;
-            }
-            .remark-code,
-            .remark-inline-code {
-                font-family: "Ubuntu Mono";
-            }
-        </style>
-    </head>
-    <body>
-        <textarea id="source">
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
 
-class: center, middle
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
 
-# eCH-0056 Revision
-## Kick-off Meeting
-### 11-10-2022
-      
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 25%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: title
+layout: true
+class: left, middle, inverse
 ---
-      
-# Agenda
-      
-To be defined
+name: slide # 1
+#GeoStandards.ch
+##Revision eCH-0056: Anwendungsprofil Geodienste<br>Révision eCH-0056: Profil d'application de géoservices
+11-10-2022
+
+> **_NOTE:_** add background image
+
+---
+name: slide # 2
+layout: false
+
+##Willkommen<br>Bienvenue
+
+> **_NOTE:_** add image
+---
+name: slide # 3
+
+##Pausen / Mittagessen<br>Pause / Déjeuner
+
+.left-column[
+- Cafe und Gipferfeli offeriert
+- Mittagessen a la carte individuell
+      - 12:40 LUCE
+      - Zeughausgasse 28
+- Café et Gipferfeli offerts
+- Déjeuner à la carte individuellement
+      - 12:40 LUCE
+      - Zeughausgasse 28
+]
+.right-column[
+> **_NOTE:_** add image
+]
+---
+name: slide # 4
+
+## Agenda
+
+> **_NOTE:_** copy & paste agenda
+
+---
+name: slide # 5
+
+## Ziele für heute<br>Objectifs pour aujourd'hui
+
+- Geklärter Arbeitsauftrag -> Beschlossene Liste der zu «helvetisierenden» internationalen Standards.
+- Geklärte **Methode** -> Wie gehen wir bei der «Helvetisierung» vor? 
+- Geklärter **Fahrplan** -> Wann machen wir was?
+
+- **Ordre de travail** clarifié -> Liste approuvée des normes internationales à « helvétiser ». 
+- **Méthode** clarifiée -> Comment procède-t-on à « l'helvétisation » ?
+- **Calendrier** clarifié -> Quand fait-on quoi ?
+- **Forme** clarifiée du nouveau profil eCH Vs. 4.0 (document)
+---
+name: slide # 6
+
+##Warum Standards?<br>Pourquoi des standards?
+
+> **_NOTE:_** add image
+
+---
+name: slide # 7
+
+## Vorstellungsrunde Stakeholder<br>Présentation des participants
+
+> **_NOTE:_** add image
+
+- Bitte kurze Vorstellung mit Erwartung an den Tag und die Workshop-Serie
+- Veuillez donner une brève introduction avec les attentes de la journée et la série d'ateliers
+
+---
+name: slide # 8
+
+##Vorstellung GeoStandards.ch<br>Présentations GeoStandards.ch
+
+> **_NOTE:_** add image
+
+---
+name: slide # 9
+
+##Vorstellung GeoStandards.ch<br>Présentations de GeoStandards.ch
+
+.left-column[
+- Positionspapier Kt. SO, GL 2017
+- Strategie + Organisationsprojekt Abschluss Mitte 2021
+
+- Papier de Position ct. SO, GL 2017
+- Stratégie + Projet d’organisation fin de travaux mi-2021
+
+]
+> **_NOTE:_** add image
+
+---
+name: slide # 10
+
+##Umsetzung der **S**trategie **G**eoinformation **S**chweiz<br>Mise en œuvre de la stratégie suisse pour la géoinformation
+
+-Auftrag aus Aktionsplan 2022+
+
+> **_NOTE:_** add image
+
+-Ordre issu du plan d’action 2022+
+
+> **_NOTE:_** add image + bg image
+---
+name: slide # 11
+
+##GeoStandards.ch und eCH
+
+> **_NOTE:_** add image + bg image
+
+---
+name: slide # 12
+
+##GeoStandards.ch und eCH
+
+**eCH FG Geonormen/SOGI FG5**
+- eCH-0031 	INTERLIS 2-Referenzhandbuch
+- eCH-0056 	Anwendungsprofil Geodienste
+- eCH-0166 	Geokategorien
+
+**eCH FG INTERLIS**
+- eCH-0117 	Meta-Attribute für INTERLIS-Modelle
+- eCH-0118 	GML-Kodierungsregeln für INTERLIS 
+
+**Externer Antragsteller**
+- eCH-0153 	eGRISDM
+---
+name: slide # 13
+
+##Organisationsentwicklung eCH-FG
+
+> **_NOTE:_** add image
+
+---
+name: slide # 14
+
+##Organisationsentwicklung eCH-FG
+
+> **_NOTE:_** add image
+
+???
+-GOF: 
+  -Geschäftsstelle GeoStandards.ch, Themenführerschaft Organisation + Kommunikation
+  -a.i. Leitung eCH FG Geoinformation
+
+-PS: 
+  -Mitarbeit Geschäftsstelle GeoStandards.ch
+  -Mitglied eCH EA
+  -Mitarbeit eCH FG Geoinformation
+  -Unterstützung a.i. Leitung eCH FG Geoinformation
+
+-Tbd:
+  -Themenführerschaft Standardsisierung, Leitung eCH FG Geoinformation
+  -Themenführerschaft Werkzeuge
+  -Themenführerschaft Bildung
+
+---
+name: slide # 15
+
+## Organisationsentwicklung eCH-FG, Zeitplan
+
+> **_NOTE:_** add image
+---
+name: slide # 16
+
+##Warum Revision eCH-0056 jetzt?<br>Pourquoi la révision eCH-0056 maintenant ?
+
+> **_NOTE:_** add image
+---
+name: slide # 17
+
+##Warum Revision eCH-0056 jetzt?<br>Pourquoi la révision eCH-0056 maintenant ?
+
+- Bund / swisstopo haben Verantwortung für Gesetz und Verordnung (GeoIG, GeoIV)
+- NGDI im Aufbau
+- 6 Jahre seit letzter Überarbeitung (2016 – Vs. 3.0)
 
 
-        </textarea>
+- La Confédération / swisstopo sont responsables de la loi et de l'ordonnance (GeoIG, GeoIV) 
+- NGDI en construction 
+- 6 ans depuis la dernière révision (2016 - Vs. 3.0) 
+- Beaucoup d'activité au niveau international (ex. OGC)
+---
+name: slide # 18
 
-        <!-- remark.js -->
+class: left, middle, inverse
 
-        <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-        <!-- <script src="Chart.js" type="text/javascript"></script>
-    <script src="jquery.js" type="text/javascript"></script>
-    <script src="remarkchart.js" type="text/javascript"></script> -->
+##Rechtlicher Rahmen eCH-0056
 
-        <!-- option: mermaid -->
+Die Kompetenz von swisstopo eCH-0056 als verbindlichen Standard festzulegen beruht auf 
+den `Art. 34-36 GeolV [31] (vgl. dazu Abbildung 2)`. 
+`Wenn eine zuständige Stelle (gemäss Anhang I GeolV [31])` einen Oder mehrere Geobasis- 
+datensätze in einem Geodienst anbietet und/oder vertreibt, `muss dieser Dienst eCH-0056- 
+konform sein`, also sämtliche im Standard enthaltenen verbindlichen Vorgaben erfüllen. Es ist 
+dabei unerheblich, 0b die entsprechende zuständige Stelle mit einem Geodienst ausschliess- 
+lich Geobasisdatensätze anbietet, die ihr gemäss Anhang 1 GeolV [31] zugeordnet Sind Oder 
+auch solche anderer zuständiger Stellen.<br><br> 
+`Für Dritte (insbesondere Private) gelten diese Voraussetzungen grundsätzlich nicht`. Wenn 
+aber Dritte durch bestimmte Vereinbarungen Oder Verfügungen die Pflichten als zuständige 
+Stelle übertragen bekommen, so unterstehen sie diesbezüglich ebenfalls den geltenden ge- 
+setzlichen Bestimmungen und müssen die entsprechenden Geodienste eCH-0056-konform 
+gestalten.<br><br> 
+Allgemein ist zu beachten, dass die gesetzliche Verpflichtung den Standard einzuhalten nur 
+die Richtlinien, d.h. die zwingenden Vorgaben umfasst. Die Empfehlungen Sind nach Mög- 
+lichkeit einzuhalten, jedoch besteht dazu keine gesetzliche Pflicht. 
 
-        <!-- <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script> -->
+---
+name: slide # 19
 
-        <script>
-            var slideshow = remark.create();
-            remarkchart.init(slideshow);
-        </script>
-    </body>
+##Rechtlicher Rahmen eCH-0056
+
+> **_NOTE:_** add image
+
+---
+name: slide # 20
+
+##Geoinformationsverordnung, GeoIV<br>Ordonnance sur la géoinformation, OGéo
+
+> **_NOTE:_** add image
+---
+name: slide # 21
+
+##Anforderungen an den Normungsprozess eCH<br>Exigences pour le processus de normalisation eCH
+
+> **_NOTE:_** add image
+---
+name: slide # 22
+
+##Standardisierungsprozess eCH<br>Processus de normalisation eCH
+
+> **_NOTE:_** add image
+---
+name: slide # 23
+
+##NGDI 20-60<br>Présentation du projet 
+
+- Processus itératif
+- **3** partenaires académiques (HEIG-VD, SUPSI, UNIGE)
+- **3** différents domaines de recherche:
+  - Données de capteurs
+  - Données vectorielles et representation cartographique
+  - Données d'observation de la Terre
+  - Résultats présentés lors de la conférence [FOSS4G 22](https://talks.osgeo.org/foss4g-2022-academic-track/talk/GBPPCM/) & [ISPRS](https://talks.osgeo.org/foss4g-2022-academic-track/talk/GBPPCM/)
+
+> **_NOTE:_** add image
+---
+name: slide # 24
+
+##Présentation de l'OGC<br>Aspects principaux
+
+- Organisation internationale de plus de 500 membres
+- Elaboration de standards géospatiaux ouverts
+- HEIG-VD membre depuis 2010
+- Making Location FAIR
+- Réduction du risque technologique
+
+> **_NOTE:_** add images
+---
+name: slide # 25
+
+##Présentation de l’OGC<br>OGC Committees
+
+- «Big Picture»
+- **4** entités principales
+- Rôles différents dans le processus
+- **Technical Committe (TC)**
+- **OGC Architecture Board (OAB)**
+
+> **_NOTE:_** add images
+---
+name: slide # 26
+
+##Présentation de l’OGC<br>Processus du standardisation
+
+-How to enter the matrix?
+
+> **_NOTE:_** add images
+
+---
+name: slide # 27
+
+##Présentation de l’OGC<br>Processus du standardisation
+
+- Processus agile, ouvert et transparent
+
+> **_NOTE:_** add images
+
+---
+name: slide # 28
+
+##Présentation de l’OGC<br>OGC APIs
+
+- Nouvelle génération de standards amorcée en 2015
+- JSON encoding
+- Orientés web
+- Endpoints communs et partagés tels que:
+  -/landing page
+  -/conformance
+  -/openapi
+  -/collections
+  -/collections/foo
+
+> **_NOTE:_** add images
+
+---
+name: slide # 29
+
+> **_NOTE:_** add image
+
+---
+name: slide # 30
+
+##Liste der zu «helvetisierenden» internationalen Standards<br>Liste des normes internationales à « helvétiser »
+---
+name: slide # 31
+
+##Liste der zu «helvetisierenden» internationalen Standards<br>Liste des normes internationales à « helvétiser »
+
+.pull-left[
+
+**Vecktor**<br>
+a. OGC API Features
+
+**Raster**<br>
+a. OGC API Coverages<br>
+b. OGC API EDR (Remote Sensing Data)<br>
+
+**Tiles**<br>
+a. OGC API Tiles<br>
+b. Tiling Schema
+
+**Metadaten**<br> 
+a.GM03<br>
+b.STAC – Spatio Temporal Asset Catalogs<br>
+c.OGC API Records (*Kann es den CSW Standard ersetzen?*)
+
+**Styling**<br>
+a. OGC API Styles
+]
+
+.pull-right[
+
+**Vecteur**<br>
+a. OGC API Features
+
+**Raster**<br>
+a. OGC API Coverages<br>
+b. OGC API EDR (Remote Sensing Data)<br>
+
+**Tiles**<br>
+a. OGC API Tiles<br>
+b. Tiling Schema
+
+**Metadaten**<br> 
+a.GM03<br>
+b.STAC – Spatio Temporal Asset Catalogs<br>
+c.OGC API Records (*Peut-il remplacer le standard actuel CSW?*)
+
+**Styling**<br>
+a. OGC API Styles
+]
+---
+name: slide # 32
+
+##Liste der zu «helvetisierenden» internationalen Standards<br>Liste des normes internationales à « helvétiser »
+
+.pull-left[
+**Diverses**<br>
+a. OGC GeoPose (AR/VR)<br>
+b. OGC Geopackage (soll als Datenbank Teil von eCH0056 werden?)<br>
+c. OGC API Processes (Kann es den aktuellen WPS Standard ersetzen?)<br>
+d. OGC SensorThings API<br>
+e. LinkedData (Soll als Webtechnologie Teil von eCH0056 werden?)<br>
+f. Cloud Optimzed Data Formats (z.B. cloud optimized GeoTIFF)<br>
+g. Cadre de référence (LV03 löschen?)<br>
+h. Atom Feeds (wie weiter mit diesem Standard?)<br>
+]
+
+.pull-right[
+**Diverses**<br>
+a.OGC GeoPose (AR/VR)<br>
+b.OGC Geopackage (*ça peut faire partie de eCH0056?*)<br>
+c. OGC API Processes (*Peut-il remplacer le standard actuel WPS?)*<br>
+d. OGC SensorThings API<br>
+e. LinkedData (*Devrait-il être inclus en tant que technologie Web dans eCH-0056 ?*)<br>
+f. Cloud Optimzed Data Formats (z.B. *COG*)<br>
+g. Cadre de référence (*Le système de projection LV03 doit-il être maintenu?*)<br>
+h. Atom Feeds (*comment continuer?*) -> discussion
+]
+
+---
+name: slide # 33
+
+##Aufgabe<br>Tâche
+
+- Wie ist der aktuelle Stand bei der Standardisierung auf internationalem Niveau  (OGC, ISO, W3C etc?) -> Reifegrad
+
+- (persönlichen) Bedarf markieren (1 Strich)
+
+- Zusätzlichen Bedarf (an eCH-Standards) notieren<br><br>
+
+- Quel est l'état actuel de la normalisation au niveau international (OGC, ISO, W3C etc ?) -> degré de maturité
+
+- Marquer les besoins (personnels) (1 ligne) 
+
+- Notez tout besoin supplémentaire (pour les normes eCH)
+
+---
+name: slide # 34
+
+##Méthodologie<br>OGC Standards Roadmap
+
+.left-column[
+- **5** standards déjà adoptés
+- OAF 1 + 2
+- OA EDR
+- OA Processes
+- STA 1
+]
+
+.right-column[
+
+> **_NOTE:_** add image
+
+]
+---
+name: slide # 35
+
+class: left, middle, inverse
+
+##Stellungnahme KGK - Opinion CGC
+
+- **Grundsätzlich** ist die aktuelle Version 3.0 des Standards als Grundlage für die Revision zu berücksichtigen.<br><br> 
+- Hinsichtlich der **Verbindlichkeit von eCH-0056** ist eventuell im Projekt speziell darauf hinzuweisen, dass der Standard in der aktuellen Version 3.0 der GeoIV-swisstopo referenziert ist. Für sich alleinstehend ist eCH-0056 eher eine technische Richtlinie im Sinne einer 
+Empfehlung.<br><br>
+- eCH definiert **drei Status für Standards**: «Genehmigt» (ein aktueller, gültiger Standard), «ABGELÖST» (ein gültiger Standard, zu dem keine neuen Lösungen implementiert werden sollen), «AUFGEHOBEN» (ein nicht mehr gültiger Standard, der nicht mehr zu verwenden ist). Siehe dazu auch Punkte weiter unten.<br><br> 
+- **Allgemeine** Regeln: http-Anfragen, Datum und Zeit: auch in Version 4.0 beibehalten.<br><br> 
+- **Sicherheit**: auch in Version beibehalten.<br><br> 
+- **Sprache**: auch in Version beibehalten.<br><br> 
+- **Metadaten**: auch in Version beibehalten.<br><br>
+
+---
+name: slide # 36
+
+class: left, middle, inverse
+
+##Stellungnahme KGK - Opinion CGC
+
+- **Koordinatensysteme**: EPSG:21781 (LV03) soll nicht mehr gefordert werden.<br><br> 
+- **Qualität**: swisstopo und geodienste.ch definieren für ihre Dienste resp, Geobasisdienste («Fair Use» - Nutzungsbestimmungen. Damit soll technischer Missbrauch unterbunden werden. Vgl. https://www.geoadmin.ch/de/geo-dienstleistungen/geodienste/terms-of-use.html 
+resp. https://geodienste.ch/terms-of-use. Es würde sich lohnen, das Thema «Fair Use» zu diskutieren und zu klären, ob solche Bestimmungen allgemein oder generisch in den Standard aufgenommen werden können.<br><br> 
+- **WMS** auch in Version beibehalten.<br><br>  
+- **CSW**: auch in Version beibehalten.<br><br> 
+- **SE**: uns Sind keine Anwendungsfälle bekannt. Evtl. mit VectorTiles benutzerspezifsche Darstellung ermöglichen.<br> 
+- **SLD**: uns Sind keine Anwendungsfälle bekannt. Evtl. mit VectorTiles benutzerspezifische Darstellung ermöglichen.<br><br> 
+- **Positionierungsdienste, Mess- und Auswertedienste**: Sind uns zu wenig bekannt, um dazu eine quaifizierte Aussage machen zu können. 
+
+---
+name: slide # 37
+
+class: left, middle, inverse
+
+##Stellungnahme KGK - Opinion CGC
+
+- **Download-Dienste** (alle bisher standardisierten Varianten Atom-Feeds + OpenSearch, WFS, WCS): auch in Version 4.0 beibehalten. Im Hinblick auf zukunftsgerichtete Standards wie OGC API, STAC diskutieren, ob man diese «alten» Standards gleichwohl aus der revidierten 
+Version entfernt und nur noch der neu «ABGELÖST»en Version weiterhin anwendbar behalten will. Die Frage stellt sich dabei - und diese wäre sehr seriös zu klären — in welchem Zeithorizont dann der Standard erneut revidiert würde, wodurch dann diese «alten» Standard 
+endgültig «ausser Betrieb» gesetzt würden. Wir Sind klar der Auffassung, dass insbesonderes WFS und auch Atom + OpenSearch (siehe opendata.swiss) noch Lange Zeit im Einsatz stehen werden.<br><br> 
+- eCH-W56 definiert, wie Standards genau anzuwenden sind. Es wird aber keine Aussage gemacht, dass man dies tun muss. In auf die «GeoIG-konformen» Download-Dienste wurde das Proiekt [MDX](https://www.kgk-cgc.ch/download_file/77/226) realisiert, wo definiert 
+wird, wie solche Dienste konform Verordnung aufzubauen und betreiben sind. Dabei wird auf den Standard verwiesen. Eventuell Iohnt es sich, diese Frage im Rahmen der Revision erneut zu diskutieren.
+
+---
+name: slide # 38
+
+> **_NOTE:_** add image
+---
+name: slide # 39
+
+##Comment intégrer le processus de normalisation de l'OGC dans le contexte helvétique?
+
+.pull-left[
+- Analyse des besoins
+- Identification des standards à challenger
+- Participation active à l’OGC
+- Définition de cas d’études
+- Déploiement logiciels
+- Documentation et communication
+]
+
+.pull-right[
+> **_NOTE:_** add image
+]
+
+---
+name: slide # 40
+
+##Sélection des standards
+
+- Analyse des besoins
+- Standards groupés en **3 catégories**:
+- **Données de capteurs**
+  - OGC SensorThings API
+- **Données vectorielles et représentation cartographique**
+  - OAF, Maps, Styles, SymCore, Tiles
+- **Données d'observation de la Terre**
+  - OGC API Coverages, DGGS, EDR, Processes, Records
+
+.pull-right[
+> **_NOTE:_** add image
+]
+
+---
+name: slide # 41
+
+##Sélection d’implémentations logicielles
+
+- Open source solutions
+- Representative of OSGeo developer communities (Python, Java, C++)
+- Conformance Declaration
+- Docker environment
+
+> **_NOTE:_** add image
+---
+name: slide # 42
+
+##Sélection d’implémentations logicielles
+
+.pull-left[
+- 5 différents logiciels<br><br>
+- FROST (Fraunhofer IOSB)<br><br> 
+- GeoServer (GeoServer Community)<br><br>
+- ldproxy (Interactive Instruments)<br><br> 
+- pygeoapi (GeoPython Community)<br><br> 
+- QGIS Server (QGIS Community)<br><br>
+- Déclaration de conformité<br><br>
+]
+
+> **_NOTE:_** add image
+
+---
+name: slide # 43
+
+##Swiss national OGC API Testbed platform
+
+
+.pull-left[
+- Disponible @ https://ogc.heig-vd.ch
+- Inspirée de Geonovum OGC API Testbed
+- Déploiement conteneurisé
+- Basé sur GIT
+- Documentation intégrée
+- Découverte
+- Evaluation, tests
+]
+
+.pull-right[
+> **_NOTE:_** add image
+]
+
+---
+name: slide # 44
+
+##Déroulement des workshops
+
+.pull-left[
+Workshops répartis par thématiques
+Description des standards
+Utilisation de la plateforme de test
+Comparaison avec les standards WxS
+Relations avec eCH-0056
+Définition de critères d’évaluation cf [GeoUnconference #3](https://github.com/GeoUnconference/discussions/discussions/8#discussioncomment-2694177)
+]
+
+.pull-right[
+> **_NOTE:_** add image
+]
+---
+name: slide # 45
+
+> **_NOTE:_** add image
+
+---
+name: slide # 46
+
+##Elaboration du rapport final
+
+- Quel processus derrière eCH?
+- Est-il possible pour une démarche plus itérative et agile?
+- Modification de la structure du rapport
+
+---
+name: slide # 47
+
+> **_NOTE:_** add background image
+
+# Images
+
+background-image: url(image.jpg)
+
+
+    </textarea>
+    <script src="downloads/remark-latest.min.js"></script>
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="remark.language.js"></script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        }) ;
+    </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-44561333-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = 'https://ssl.google-analytics.com/ga.js';
+        var s = document.scripts[0];
+        s.parentNode.insertBefore(ga, s);
+      }());
+    </script>
+  </body>
 </html>
