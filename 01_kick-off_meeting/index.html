@@ -28,10 +28,10 @@
       li p { line-height: 1.25em; }
       .red { color: #fa0000; }
       .large { font-size: 2em; }
-      a, a > code {
+      /* a, a > code {
         color: rgb(249, 38, 114);
         text-decoration: none;
-      }
+      } */
       code {
         background: #e7e8e2;
         border-radius: 5px;
@@ -122,14 +122,22 @@
     <textarea id="source">
 name: title
 layout: true
-class: left, middle, inverse
+class: left, middle
 ---
 name: slide # 1
-#GeoStandards.ch
+
+.pull-left[
+<p style="text-align:left;"><img src="./images/logo-eCH.png" alt="Slide # 1 top left" width="80%"></p>
+]
+.pull-right[
+<p style="text-align:right;"><img src="./images/logo-sgs-bee.png" alt="Slide # 1 top right" width="80%"></p>
+]
+-- 
+##GeoStandards.ch
 ##Revision eCH-0056: Anwendungsprofil Geodienste<br>Révision eCH-0056: Profil d'application de géoservices
 11-10-2022
 
-> **_NOTE:_** add background image
+<p style="text-align:center;"><img src="./images/slide_1_bottom_banner.png" alt="Slide # 1 top right" width="100%"></p>
 
 ---
 name: slide # 2
@@ -137,31 +145,80 @@ layout: false
 
 ##Willkommen<br>Bienvenue
 
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/welcome.jpg" alt="Welcome" width="60%"></p>
 ---
 name: slide # 3
 
 ##Pausen / Mittagessen<br>Pause / Déjeuner
 
-.left-column[
-- Cafe und Gipferfeli offeriert
+.pull-left[
+- Cafe und Gipferfeli offeriert<br><br>
 - Mittagessen a la carte individuell
       - 12:40 LUCE
-      - Zeughausgasse 28
-- Café et Gipferfeli offerts
+      - Zeughausgasse 28<br><br>
+- Café et croissants offerts<br><br>
 - Déjeuner à la carte individuellement
       - 12:40 LUCE
       - Zeughausgasse 28
 ]
-.right-column[
-> **_NOTE:_** add image
+.pull-right[
+<p style="text-align:center;"><img src="./images/luce.png" alt="Luce" width="100%"></p>
 ]
 ---
 name: slide # 4
 
 ## Agenda
 
-> **_NOTE:_** copy & paste agenda
+1. Vorstellung [geostandards.ch](https://geostandards.ch/) (Staub / Gottsmann) 10min		
+2. Warum Revision eCH-0056? (Staub / Gottsmann / HEIG-VD)		30 min 		
+  1. Vorarbeiten HEIG-VD (20 / 60)
+  2. (Vor) Arbeiten OGC
+  3. Anforderungen an Normungsprozess eCH
+
+3. Vorstellungsrunde der Stakeholder (alle)			30 min 		
+  1. Vorstellung, Interessen und Wünsche für die anstehenden Arbeiten / für den neuen Prozess
+
+4. Znüni Pause				(ca.10:40)					
+
+---
+name: slide # 4 bis
+
+## Agenda
+
+5. Liste von zu helvetisierenden internationalen Standards – z.B. OGC (HEIG-VD, Alle) 	90min<br>
+.footnote[Ein erster Entwurf dieser Liste ist Ihnen mit dem Einladungsmail zugegangen]		
+
+  1. Welche Komponenten müssen definitiv ins neue Profil eCH-0056?
+  2. Diskussion und Abstimmung (bitte machen Sie sich bereits im Vorfeld ihre Gedanken)
+
+6. Gemeinsames Mittagessen			(ca.12:30)	
+
+7. Methode / Ablauf Normungsprozess -> Werkzeugkasten (HEIG-VD)	60min 	
+
+ 1. Methode HEIG-VD
+ 2. Vorstellung Test-Plattform
+ 3. Testen, Bewerten
+ 4. Feedback (Qualitativ und Quantitativ) auf Fachworkshops
+ 5. Konsensfindung
+ 6. Formulierung neuer Norm (Eckpunkte)
+
+---
+name: slide # 4 bis ter
+ 
+ ## Agenda
+
+8. Geplanter Ablauf Fachworkshop (HEIG-VD)		30 min 			
+  1. Vorarbeiten OGC
+  2. Definition und Funktion (der Komponente)
+  3. Feedback Tests
+  4. Qualitätsbeurteilung (der neuen Komponente )
+
+9. Pause (ca. 15:00)
+
+10. Gestaltung Schlussbericht (HEIG-VD)
+  1. Bisheriges Dokument vs. neue Struktur 		20 min
+
+11. Varia und Abschluss			ca. 16:00
 
 ---
 name: slide # 5
@@ -181,14 +238,14 @@ name: slide # 6
 
 ##Warum Standards?<br>Pourquoi des standards?
 
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/standards.png" alt="Standards" width="100%"></p>
 
 ---
 name: slide # 7
 
 ## Vorstellungsrunde Stakeholder<br>Présentation des participants
 
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/vorstellung_stakeholders.png" alt="Stakeholders" width="100%"></p>
 
 - Bitte kurze Vorstellung mit Erwartung an den Tag und die Workshop-Serie
 - Veuillez donner une brève introduction avec les attentes de la journée et la série d'ateliers
@@ -198,41 +255,42 @@ name: slide # 8
 
 ##Vorstellung GeoStandards.ch<br>Présentations GeoStandards.ch
 
-> **_NOTE:_** add image
+<br><br><p style="text-align:center;"><img src="./images/vorstellung_gs_1.png" alt="Vorstellung Geostandards" width="100%"></p>
 
 ---
 name: slide # 9
 
 ##Vorstellung GeoStandards.ch<br>Présentations de GeoStandards.ch
 
-.left-column[
+.pull-left[
 - Positionspapier Kt. SO, GL 2017
 - Strategie + Organisationsprojekt Abschluss Mitte 2021
 
 - Papier de Position ct. SO, GL 2017
 - Stratégie + Projet d’organisation fin de travaux mi-2021
-
 ]
-> **_NOTE:_** add image
 
+.pull-right[
+<br><br><p style="text-align:center;"><img src="./images/vorstellung_gs_2.png" alt="Vorstellung Geostandards" width="120%"></p>
+]
 ---
 name: slide # 10
 
 ##Umsetzung der **S**trategie **G**eoinformation **S**chweiz<br>Mise en œuvre de la stratégie suisse pour la géoinformation
 
--Auftrag aus Aktionsplan 2022+
+- Auftrag aus Aktionsplan 2022+
 
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/sgs_aktion_plan_d.png" alt="SGS Aktionplan #1" width="100%"></p>
 
--Ordre issu du plan d’action 2022+
+- Ordre issu du plan d’action 2022+
 
-> **_NOTE:_** add image + bg image
+<p style="text-align:center;"><img src="./images/sgs_aktion_plan_fr.png" alt="SGS Aktionplan #2" width="100%"></p>
 ---
 name: slide # 11
 
 ##GeoStandards.ch und eCH
 
-> **_NOTE:_** add image + bg image
+<br><br><p style="text-align:center;"><img src="./images/geostandards-ech.png" alt="Geostandards ecH" width="100%"></p>
 
 ---
 name: slide # 12
@@ -255,14 +313,14 @@ name: slide # 13
 
 ##Organisationsentwicklung eCH-FG
 
-> **_NOTE:_** add image
+<br><p style="text-align:center;"><img src="./images/organisationsentwicklung-eCH-FG_1.png" alt="Organisationsentwicklung eCH-FG #1" width="100%"></p>
 
 ---
 name: slide # 14
 
 ##Organisationsentwicklung eCH-FG
 
-> **_NOTE:_** add image
+<br><p style="text-align:center;"><img src="./images/organisationsentwicklung-eCH-FG_2.png" alt="Organisationsentwicklung eCH-FG #2" width="100%"></p>
 
 ???
 -GOF: 
@@ -285,13 +343,14 @@ name: slide # 15
 
 ## Organisationsentwicklung eCH-FG, Zeitplan
 
-> **_NOTE:_** add image
+<br><p style="text-align:center;"><img src="./images/organisationsentwicklung-eCH-FG_3.png" alt="Organisationsentwicklung eCH-FG #3" width="100%"></p>
 ---
 name: slide # 16
 
 ##Warum Revision eCH-0056 jetzt?<br>Pourquoi la révision eCH-0056 maintenant ?
 
-> **_NOTE:_** add image
+<br><br><p style="text-align:center;"><img src="./images/warum_revision_eCH-0056.png" alt="Pourquoi la révision eCH-0056" width="100%"></p>
+
 ---
 name: slide # 17
 
@@ -335,26 +394,28 @@ name: slide # 19
 
 ##Rechtlicher Rahmen eCH-0056
 
-> **_NOTE:_** add image
+<br><p style="text-align:center;"><img src="./images/rechtliche_aspekte.png" alt="Rechtliche Aspekte" width="95%"></p>
 
 ---
 name: slide # 20
 
 ##Geoinformationsverordnung, GeoIV<br>Ordonnance sur la géoinformation, OGéo
 
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/GeoIV.png" alt="GeoIV" width="100%"></p>
 ---
 name: slide # 21
 
 ##Anforderungen an den Normungsprozess eCH<br>Exigences pour le processus de normalisation eCH
 
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/exigences_eCH.png" alt="GeoIV" width="100%"></p>
+
 ---
 name: slide # 22
 
 ##Standardisierungsprozess eCH<br>Processus de normalisation eCH
 
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/Standardisierungsprozess.png" alt="Standardisierungsprozess" width="100%"></p>
+
 ---
 name: slide # 23
 
@@ -368,39 +429,49 @@ name: slide # 23
   - Données d'observation de la Terre
   - Résultats présentés lors de la conférence [FOSS4G 22](https://talks.osgeo.org/foss4g-2022-academic-track/talk/GBPPCM/) & [ISPRS](https://talks.osgeo.org/foss4g-2022-academic-track/talk/GBPPCM/)
 
-> **_NOTE:_** add image
+<br><br><p style="text-align:center;"><img src="./images/entities-INDG-20-60.png" alt="NGDI 20-60 partenaires" width="50%"></p>
+ 
 ---
 name: slide # 24
 
 ##Présentation de l'OGC<br>Aspects principaux
 
+.pull-left[
 - Organisation internationale de plus de 500 membres
 - Elaboration de standards géospatiaux ouverts
 - HEIG-VD membre depuis 2010
 - Making Location FAIR
 - Réduction du risque technologique
+<p style="text-align:center;"><img src="./images/ogc-fair.jpg" alt="OGC FAIR" width="100%"></p>
+]
 
-> **_NOTE:_** add images
+.pull-right[
+<p style="text-align:center;"><img src="./images/ogc-stats.png" alt="Statistics OGC" width="100%"></p>
+
+]
 ---
 name: slide # 25
 
 ##Présentation de l’OGC<br>OGC Committees
 
+.pull-left[
 - «Big Picture»
 - **4** entités principales
 - Rôles différents dans le processus
 - **Technical Committe (TC)**
 - **OGC Architecture Board (OAB)**
-
-> **_NOTE:_** add images
+]
+.pull-right[
+<p style="text-align:center;"><img src="./images/ogc-committees.png" alt="OGC Committees" width="100%"></p>
+]
 ---
 name: slide # 26
 
 ##Présentation de l’OGC<br>Processus du standardisation
 
--How to enter the matrix?
+- How to enter the matrix?
 
-> **_NOTE:_** add images
+<br><p style="text-align:center;"><img src="./images/ogc-process_1.png" alt="OGC Process # 1" width="100%"></p>
 
 ---
 name: slide # 27
@@ -409,34 +480,44 @@ name: slide # 27
 
 - Processus agile, ouvert et transparent
 
-> **_NOTE:_** add images
+<p style="text-align:center;"><img src="./images/ogc-process_2.png" alt="OGC Process # 2" width="100%"></p>
 
 ---
 name: slide # 28
 
 ##Présentation de l’OGC<br>OGC APIs
 
+
+.pull-left[
 - Nouvelle génération de standards amorcée en 2015
+<p style="text-align:center;"><img src="./images/ogc-openapi.png" alt="OGC Open API" width="100%"></p>
 - JSON encoding
 - Orientés web
 - Endpoints communs et partagés tels que:
-  -/landing page
-  -/conformance
-  -/openapi
-  -/collections
-  -/collections/foo
+  - /landing page
+  - /conformance
+  - /openapi
+  - /collections
+  - /collections/foo
+]
 
-> **_NOTE:_** add images
+.pull-right[
+<p style="text-align:center;"><img src="./images/ogcapis.png" alt="OGC APIs" width="100%"></p>
+]
 
 ---
 name: slide # 29
 
-> **_NOTE:_** add image
+##Coffee Break ☕
+<p style="text-align:center;"><img src="./images/coffe-break.jpg" alt="Coffe break" width="100%"></p>
 
 ---
 name: slide # 30
 
 ##Liste der zu «helvetisierenden» internationalen Standards<br>Liste des normes internationales à « helvétiser »
+
+<br><br><p style="text-align:center;"><img src="./images/vorstellung_gs_1.png" alt="Coffe break" width="100%"></p>
+
 ---
 name: slide # 31
 
@@ -462,6 +543,7 @@ c.OGC API Records (*Kann es den CSW Standard ersetzen?*)
 
 **Styling**<br>
 a. OGC API Styles
+b. SymCore
 ]
 
 .pull-right[
@@ -484,6 +566,7 @@ c.OGC API Records (*Peut-il remplacer le standard actuel CSW?*)
 
 **Styling**<br>
 a. OGC API Styles
+b. SymCore
 ]
 ---
 name: slide # 32
@@ -498,7 +581,7 @@ c. OGC API Processes (Kann es den aktuellen WPS Standard ersetzen?)<br>
 d. OGC SensorThings API<br>
 e. LinkedData (Soll als Webtechnologie Teil von eCH0056 werden?)<br>
 f. Cloud Optimzed Data Formats (z.B. cloud optimized GeoTIFF)<br>
-g. Cadre de référence (LV03 löschen?)<br>
+g. Koordinate System (LV03 löschen?)<br>
 h. Atom Feeds (wie weiter mit diesem Standard?)<br>
 ]
 
@@ -534,7 +617,7 @@ name: slide # 33
 ---
 name: slide # 34
 
-##Méthodologie<br>OGC Standards Roadmap
+##OGC Standards Roadmap
 
 .left-column[
 - **5** standards déjà adoptés
@@ -545,9 +628,7 @@ name: slide # 34
 ]
 
 .right-column[
-
-> **_NOTE:_** add image
-
+<br><br><p style="text-align:center;"><img src="./images/ogc-standards-roadmap.png" alt="OGC Standards Roadmap" width="100%"></p>
 ]
 ---
 name: slide # 35
@@ -591,13 +672,15 @@ class: left, middle, inverse
 - **Download-Dienste** (alle bisher standardisierten Varianten Atom-Feeds + OpenSearch, WFS, WCS): auch in Version 4.0 beibehalten. Im Hinblick auf zukunftsgerichtete Standards wie OGC API, STAC diskutieren, ob man diese «alten» Standards gleichwohl aus der revidierten 
 Version entfernt und nur noch der neu «ABGELÖST»en Version weiterhin anwendbar behalten will. Die Frage stellt sich dabei - und diese wäre sehr seriös zu klären — in welchem Zeithorizont dann der Standard erneut revidiert würde, wodurch dann diese «alten» Standard 
 endgültig «ausser Betrieb» gesetzt würden. Wir Sind klar der Auffassung, dass insbesonderes WFS und auch Atom + OpenSearch (siehe opendata.swiss) noch Lange Zeit im Einsatz stehen werden.<br><br> 
-- eCH-W56 definiert, wie Standards genau anzuwenden sind. Es wird aber keine Aussage gemacht, dass man dies tun muss. In auf die «GeoIG-konformen» Download-Dienste wurde das Proiekt [MDX](https://www.kgk-cgc.ch/download_file/77/226) realisiert, wo definiert 
+- eCH-0056 definiert, wie Standards genau anzuwenden sind. Es wird aber keine Aussage gemacht, dass man dies tun muss. In auf die «GeoIG-konformen» Download-Dienste wurde das Projekt [MDX](https://www.kgk-cgc.ch/download_file/77/226) realisiert, wo definiert 
 wird, wie solche Dienste konform Verordnung aufzubauen und betreiben sind. Dabei wird auf den Standard verwiesen. Eventuell Iohnt es sich, diese Frage im Rahmen der Revision erneut zu diskutieren.
-
+<br>
 ---
 name: slide # 38
 
-> **_NOTE:_** add image
+##Coffee Break ☕
+<p style="text-align:center;"><img src="./images/coffe-break.jpg" alt="Coffe break" width="100%"></p>
+
 ---
 name: slide # 39
 
@@ -613,7 +696,7 @@ name: slide # 39
 ]
 
 .pull-right[
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/feed-back-loop.png" alt="Feed-back loop" width="100%"></p>
 ]
 
 ---
@@ -621,17 +704,19 @@ name: slide # 40
 
 ##Sélection des standards
 
-- Analyse des besoins
-- Standards groupés en **3 catégories**:
-- **Données de capteurs**
-  - OGC SensorThings API
+.pull-left[
+- Analyse des besoins<br><br>
+- Standards groupés en **3 catégories**:<br><br>
+- **Données de capteurs**:
+  - OGC SensorThings API<br><br>
 - **Données vectorielles et représentation cartographique**
-  - OAF, Maps, Styles, SymCore, Tiles
+  - OAF, Maps, Styles, SymCore, Tiles<br><br>
 - **Données d'observation de la Terre**
   - OGC API Coverages, DGGS, EDR, Processes, Records
+]
 
 .pull-right[
-> **_NOTE:_** add image
+<br><br><br><br><p style="text-align:center;"><img src="./images/ngdi-ecosystem.png" alt="NGDI ecosystem" width="60%"></p>
 ]
 
 ---
@@ -639,29 +724,32 @@ name: slide # 41
 
 ##Sélection d’implémentations logicielles
 
-- Open source solutions
-- Representative of OSGeo developer communities (Python, Java, C++)
-- Conformance Declaration
-- Docker environment
+- Solutions Open source
+- Représentatives des communautés de développeurs de l'OSGeo developer(Python, Java, C++)
+- Déclarations de  conformité
+- Environnement Docker
 
-> **_NOTE:_** add image
+<p style="text-align:center;position:absolute;bottom:0;"><img src="./images/softwares.png" alt="Softwares" width="80%"></p>
 ---
 name: slide # 42
 
 ##Sélection d’implémentations logicielles
 
 .pull-left[
-- 5 différents logiciels<br><br>
-- FROST (Fraunhofer IOSB)<br><br> 
-- GeoServer (GeoServer Community)<br><br>
-- ldproxy (Interactive Instruments)<br><br> 
-- pygeoapi (GeoPython Community)<br><br> 
-- QGIS Server (QGIS Community)<br><br>
+- **5** différents logiciels<br><br>
+- FROST ([Fraunhofer IOSB](https://www.iosb.fraunhofer.de/en/projects-and-products/frost-server.html))<br><br> 
+- GeoServer ([GeoServer Community](https://geoserver.org/))<br><br>
+- ldproxy ([Interactive Instruments](https://www.interactive-instruments.de/en/))<br><br> 
+- pygeoapi ([GeoPython Community](https://geopython.github.io/))<br><br> 
+- QGIS Server ([QGIS Community](https://qgis.org/en/site/))<br><br>
 - Déclaration de conformité<br><br>
 ]
 
-> **_NOTE:_** add image
+.pull-right[
+<br><br><p style="text-align:center;"><img src="./images/conformance-declarations.png" alt="Conformance declarations" width="100%"></p>
+]
 
+<p style="text-align:center;position:absolute;bottom:0;"><img src="./images/softwares.png" alt="Softwares" width="80%"></p>
 ---
 name: slide # 43
 
@@ -679,7 +767,7 @@ name: slide # 43
 ]
 
 .pull-right[
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/ogc-tb-heig-vd.png" alt="OGC API Testbed platform" width="100%"></p>
 ]
 
 ---
@@ -697,12 +785,13 @@ Définition de critères d’évaluation cf [GeoUnconference #3](https://github.
 ]
 
 .pull-right[
-> **_NOTE:_** add image
+<p style="text-align:center;"><img src="./images/ogc-apis-wxs.png" alt="OGC APIs - WxS relationship" width="100%"></p>
 ]
 ---
 name: slide # 45
 
-> **_NOTE:_** add image
+##Coffee Break ☕
+<p style="text-align:center;"><img src="./images/coffe-break.jpg" alt="Coffe break" width="100%"></p>
 
 ---
 name: slide # 46
@@ -716,12 +805,9 @@ name: slide # 46
 ---
 name: slide # 47
 
-> **_NOTE:_** add background image
+##Vielen Dank für Ihre Teilnahme<br>Merci de votre participation
 
-# Images
-
-background-image: url(image.jpg)
-
+<p style="text-align:center;"><img src="./images/last-page.jpg" alt="Last page" width="100%"></p>
 
     </textarea>
     <script src="downloads/remark-latest.min.js"></script>
@@ -735,18 +821,6 @@ background-image: url(image.jpg)
           highlightLanguage: 'remark',
           highlightLines: true
         }) ;
-    </script>
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-44561333-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script');
-        ga.src = 'https://ssl.google-analytics.com/ga.js';
-        var s = document.scripts[0];
-        s.parentNode.insertBefore(ga, s);
-      }());
     </script>
   </body>
 </html>
