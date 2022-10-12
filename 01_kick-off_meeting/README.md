@@ -1,5 +1,7 @@
 # Kick-off meeting
 ## Meeting notes
+
+
 - volonté de rendre le processus eCH plus agile, moderne
 
 - Projektkernteam:
