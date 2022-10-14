@@ -63,7 +63,7 @@ Stakeholders were invited to introduce themselves as well as their specific inte
 
 The session continued with the presentation of [Geostandards.ch](https://geostandards.ch/) by Frank Gottsmann.
 
-The associated presentation items can be found [here](https://mediacomem.github.io/eCH-0056-revision/01_kick-off_meeting/index.html#11).
+The associated presentation items can be found [here](https://mediacomem.github.io/eCH-0056-revision/01_kick-off_meeting/index.html#9).
 
 In terms of highlights, it was mentioned that the leaderships of the themes: *Standardisierung* and *Tools* have yet to be assigned.
 
@@ -71,7 +71,7 @@ In terms of highlights, it was mentioned that the leaderships of the themes: *St
 
 Frank Gottsmann then spoke about the legal aspects of the eCH-0056 standard.
 
-The associated presentation items can be found [here](https://mediacomem.github.io/eCH-0056-revision/01_kick-off_meeting/index.html#21).
+The associated presentation items can be found [here](https://mediacomem.github.io/eCH-0056-revision/01_kick-off_meeting/index.html#19).
 
 The following exchanges followed:
 
