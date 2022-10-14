@@ -185,7 +185,7 @@ These use cases and standards will be discussed in dedicated workshops.
 | Positioning service (swipos)   | [swipos-GIS/GEO](https://www.swisstopo.admin.ch/en/geodata/geoservices/swipos/swipos-dienste/swipos-gisgeo.html)                                                                          |
 | Quality                        | [INTERLIS 2](https://www.interlis.ch/en/dokumentation/interlis-2), [eCH-118](https://ech.ch/de/ech/ech-0118/2.0)                                                                          |
 | [Services de calcul et de transformation](https://www.swisstopo.admin.ch/fr/cartes-donnees-en-ligne/calculation-services.html)| [OGC API - Processes](https://ogcapi.ogc.org/processes/)                                   |
-|                                |[Cloud Optimized GeoTIFF](https://www.ogc.org/standards/requests/254)                                                                                                                                          |
+|                 ?               |[Cloud Optimized GeoTIFF](https://www.ogc.org/standards/requests/254)                                                                                                                                          |
 
 [^1]: this list can of course be extended (e.g. with the results of the [GeoUnconference #4](https://github.com/GeoUnconference/discussions/discussions/8#discussioncomment-3857483))
 
