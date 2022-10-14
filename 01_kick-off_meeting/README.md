@@ -15,7 +15,7 @@
 | Marco Bernasocchi  | OPENGIS.ch                           |
 | Maria Klonner      | swisstopo                            |
 | Maxime Collombin   | HEIG-VD                              |
-| Olivier Grimm      | Geowerkstatt                         |
+| Oliver Grimm      | Geowerkstatt                         |
 | Pasquale Di Donato | swisstopo (KOGIS)                    |
 | Pia Bereuter       | FHNW                                 |
 | Raphaël Bovier     | swisstopo                            |
@@ -51,13 +51,12 @@ Stakeholders were invited to introduce themselves as well as their specific inte
 | Beat Tschanz       |- In order to guarantee the interconnection between cantonal, national and federal data infrastructures, the legal aspect is important.<br>- It must also be ensured that the geoservices are accessible and usable.<br>- A new direction needs to be given to download services.<br>- A transitional phase must be considered.<br>- The review process must be clear and consensual.|
 | Marco Bernasocchi  |- Standardisation is an important topic for clients.<br>- Standardisation is a very important topic for the OSGeo board.<br> - It must ensure the interoperability of software solutions.<br>- How far should the "Helvetisation" go? |
 | Maria Klonner      |- It is important to consider the IFC standard.<br>- What could be the influence on cadastral surveying?|
-| Olivier Grimm      |- A lot of work has been carried out on INTERLIS.<br>- It is important to keep a practical perspective on standardisation.<br>- Methodology is important.|
+| Oliver Grimm      |- A lot of work has been carried out on INTERLIS.<br>- It is important to keep a practical perspective on standardisation.<br>- Methodology is important.|
 | Pasquale Di Donato |- The eCH-0056 process should be simple and agile.<br>-"Helvetisation" is not appropriate.|
 | Pia Bereuter       |Standardisation, interoperability and semantics are important topics for academic research.|
 | Raphaël Bovier     |- Swisstopo disseminates all kinds of data.<br>- Geoservices are increasingly important.<br>- The geoservices of the BGDI must comply with the eCH-0056 standard.<br>- It is difficult to guarantee a high level of performance within the current normative framework.<br>- It is important that standards are up to date with new technologies.<br>- Big data standards should be considered|
 | Raphaëlle Arnaud   |- Standardisation is important for Geocat.ch<br>- The revision of the GM03 standard is underway.<br>- The next workshop will take place in November.<br>- Do not overcomplicate the standard.<br>- Keep it as simple as possible.|
-| Rémy Baud          |- Tiled services (esp. tile matrices) are important for the military geodata infrastructure.<br>
-- It is important to look at new technologies.<br>- The ecH-0056 standard must be adapted.<br>- Swisstopo can provide data |
+| Rémy Baud          |- Tiled services (esp. tile matrices) are important for the military geodata infrastructure.<br>- It is important to look at new technologies.<br>- The ecH-0056 standard must be adapted.<br>- Swisstopo can provide data |
 | Stefan Ziegler     |- It is important to consider users and service providers.<br>- How far should the "Helvetisation" go?<br>- "Helvetise" as little as possible|
 
 ## Presentation of GeoStandards.ch
@@ -80,25 +79,17 @@ The following exchanges followed:
 |:------------------:|:----------------------------------------------------------------------------------------------------:|
 | Pasquale Di Donato |- NGDI organisations should comply with the eCH-0056 standard                                         |
 | Frank Gottsmann    |- They can't be forced to do so.                                                                      |
-|Raphaël Bovier      |- NGDI, BGDI, MGDI Geoservices are quite compliant, but there are services that are not included in eCH-0056<br>
-- It is important to update the standard so that they can be compliant.<br>
-- The eCH-0056 standard should be adapted more regularly so that the (N-B-M)GDI can offer compliant services.<br>
-- Can non-approved standards be incorporated into the process?                                                              |
-|Beat Tschanz        | - Geoservices would also work without a standard.<br>
-- We need to define the standards that are useful.<br>- It is important to ensure that they are used.<br>
-- Currently, the impact of eCH-0056 is not "pervasive".<br> We need to think about how do we achieve that impact.<br>
-- Propose best practice can make sense.                                                                                     |
-| Stefan Ziegler     |- The current process (6 years) is too long.
-<br>Standards should not be made on theory but based on practice.<br>- Nobody uses Atom Feeds.                              |
+|Raphaël Bovier      |- NGDI, BGDI, MGDI Geoservices are quite compliant, but there are services that are not included in eCH-0056<br>- It is important to update the standard so that they can be compliant.<br>- The eCH-0056 standard should be adapted more regularly so that the (N-B-M)GDI can offer compliant services.<br>- Can non-approved standards be incorporated into the process?                                                              |
+|Beat Tschanz        | - Geoservices would also work without a standard.<br>- We need to define the standards that are useful.<br>- It is important to ensure that they are used.<br>- Currently, the impact of eCH-0056 is not "pervasive".<br> Weneed to think about how do we achieve that impact.<br>- Propose best practice can make sense.|
+| Stefan Ziegler     |- The current process (6 years) is too long.<br>Standards should not be made on theory but based on practice.<br>- Nobody uses Atom Feeds.|
 | Pia Bereuter       |- Standards should be developed on the basis of a needs analysis.                                     |
-| Beat Tschanz       |-  An official standard of representation should be defined.<br>
-- The standardisation process needs to be redefined and updated                                                             |
+| Beat Tschanz       |-  An official standard of representation should be defined.<br>- The standardisation process needs to be redefined and updated|
 
 ```mermaid
 stateDiagram
     direction LR
     Geostandards.ch --> eCH#8211;0056 
-    (B#8211;M#8211;N#8211;)GDI --> Geostandards.ch  
+    BGDI,#10240;MGDI,#10240;NGDI --> Geostandards.ch  
 ```
 
 ## Which standard to choose ?
@@ -109,22 +100,15 @@ A discussion took place on the standards to be considered in the revision of the
 |:------------------:|:-----------------------------------------------------:|
 |   Raphaël Bovier   | - The standards should be choosen according to the associated national SDI (NGDI, BGDI, MGDI) and associated data & services |
 |    Beat Tschanz    | Portrayal und Download Services are to be considered  |
-| Marco Bernasocchi  |- According to the OGC, OGC APIs are build on the legacy of WxS.<br>
-- Preferring only OGC APIs would be wrong.<br> 
-- What are the weak points of the WMS standard?                              |
+| Marco Bernasocchi  |- According to the OGC, OGC APIs are build on the legacy of WxS.<br>- Preferring only OGC APIs would be wrong.<br>- What are the weak points of the WMS standard?|
 | Stefan Ziegler     | - Printing                                            |
-| Raphaël Bovier     | - How do we make way for new standards?<br>
-- Do we simply want to update existing standards or see what the need is?<br>
-- We are missing out on new technologies (e.g. 3D Mesh).                     |
+| Raphaël Bovier     | - How do we make way for new standards?<br>- Do we simply want to update existing standards or see what the need is?<br>- We are missing out on new technologies (e.g. 3D Mesh).|
 | Marco Bernasocchi  | - Should we consider "nice to have"?                  |
-| Beat Tschanz       | - Minimal requirements should be defined<br>
-- The availability and quality of services should be considered.<br>
-- Atom feeds are not used and can therefore be deleted.                    |
+| Beat Tschanz       | - Minimal requirements should be defined<br>- The availability and quality of services should be considered.<br>- Atom feeds are not used and can therefore be deleted.|
 | Stefan Ziegler     |- No one follows the recommendations for mapping metadata (GM03) elements.|
 | Raphaël Arnaud     | - The section on metadata in eCH-0056 refers to the harmonisation of metadata described in the GM03 standard currently under revision.                                           |
 | Pasquale Di Donnato | Geopackage should not be considered as a standard |
-| Frank Gottsmann    | - A more agile and faster process must be defined<br>
-- It is proposed to include the standards under development in a backlog in an annex to eCH-0056 |
+| Frank Gottsmann    | - A more agile and faster process must be defined<br>- It is proposed to include the standards under development in a backlog in an annex to eCH-0056.|
 
 ## Document structure and process adaptation
 
@@ -132,24 +116,15 @@ A discussion took place on the drafting process and the current structure of the
 
 | First & Last names |                     Considerations                    |
 |:------------------:|:-----------------------------------------------------:|
-| Beat Tschanz       | - The revision process should be iterative and propose minor and major changes
-<br>- The document structure has to ba adapted.                              |
-| Pia Bereuter       | - Comprehensibility is important.<br>
-- Standard should point the way.<br>
-- Configuration options should be integrated                                 |
+| Beat Tschanz       | - The revision process should be iterative and propose minor and major changes.<br>- The document structure has to ba adapted.|
+| Pia Bereuter       | - Comprehensibility is important.<br>- Standard should point the way.<br>- Configuration options should be integrated.|
 | Maria Klonner      | - Best practice should be the basis                   |
-| Frank Gottsmann    | - Maturity is an important indicator.<br>
-- In order to integrate new standards not yet validated, a variant would be that version 3.0 remains in use and that a version 4.0 is complementary.|
+| Frank Gottsmann    | - Maturity is an important indicator.<br>- In order to integrate new standards not yet validated, a variant would be that version 3.0 remains in use and that a version 4.0 is complementary.|
 | Beat Tschanz       | - The current structure of eCH-0056 is too restrictive and does not lend itself well to some standards.|
 | Oliver Grimm       | - eCH-0056 should be a guide and propose a gentle impact to clarify open questions| 
-| Beat Tschanz       |- Versions should be prescribed including minor changes (release management).<br>
-- Minimal requirements should remain : Download / Search / Display.<br>
-- But the process should definitively be more agile                           |
-| Frank Gottsmann    |- The process will be adapted.<br>
-- It will take into account specific national needs<br>
-- A selection of standards will be considered as backlog to allow for a continuous revision process.| 
+| Beat Tschanz       |- Versions should be prescribed including minor changes (release management).<br>- Minimal requirements should remain : Download / Search / Display.<br>- But the process should definitively be more agile.|
+| Frank Gottsmann    |- The process will be adapted.<br>- It will take into account specific national needs<br>- A selection of standards will be considered as backlog to allow for a continuous revision process.| 
 
- 
 ## Selection of standards
 
 A discussion took place on some additional elements to be included to the eCH-0056 document.
