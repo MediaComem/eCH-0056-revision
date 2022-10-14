@@ -107,7 +107,7 @@ A discussion took place on the standards to be considered in the revision of the
 | Beat Tschanz       | - Minimal requirements should be defined<br>- The availability and quality of services should be considered.<br>- Atom feeds are not used and can therefore be deleted.|
 | Stefan Ziegler     | - No one follows the recommendations for mapping metadata (GM03) elements.|
 | Raphaël Arnaud     | - The section on metadata in eCH-0056 refers to the harmonisation of metadata described in the GM03 standard currently under revision.                                           |
-| Pasquale Di Donnato | Geopackage should not be considered as a standard  |
+| Pasquale Di Donnato | - Geopackage should not be considered as a standard  |
 | Frank Gottsmann    | - A more agile and faster process must be defined<br>- It is proposed to include the standards under development in a backlog in an annex to eCH-0056.|
 
 ## Document structure and process adaptation
@@ -148,23 +148,23 @@ The discussions resulted in the following decisions:
 | Standard type |             Standard            |                           Decision                              |
 |:-------------:|:-------------------------------:|-----------------------------------------------------------------|
 |     Vector    |         OGC API Features        | - Should be integrated into the document<br>- Could replace WFS |
-|     Vector    |               STAC              |        To be discussed during the dedicated Workshop.           |
-|     Raster    |           OGC API Maps          |      Should be integrated in a backlog or annex document        |
-|     Raster    |        OGC API Coverages        |      Should be integrated in a backlog or annex document        |
-|     Raster    |           OGC API EDR           |              - Should be integrated the document                |
-|     Tiles     |          OGC API Tiles          |      Should be integrated in a backlog or annex document        |
-|     Tiles     |          Tiling Schema          |      Should be integrated in a backlog or annex document        |
-|    Metadata   |               GM03              |              Dedicated standard under revision.                 |
-|    Styling    |          OGC API Styles         |      Should be integrated in a backlog or annex document        |
-|    Styling    | Symbology Conceptual Core Model |      Should be integrated in a backlog or annex document        |
-|    Diverses   |           OGC GeoPose           |      Should be integrated in a backlog or annex document        |
-|    Diverses   |          OGC Geopackage         |        To be discussed during the dedicated Workshop.           |
-|    Diverses   |        OGC API Processes        |        To be discussed during the dedicated Workshop.           |
-|    Diverses   |       OGC SensorThings API      |        To be discussed during the dedicated Workshop.           |
-|    Diverses   |           Linked Data           |        To be discussed during the dedicated Workshop.           |
-|    Diverses   |   Cloud Optimized Data Formats  |        To be discussed during the dedicated Workshop.           |
-|    Diverses   |         Reference frame         |                          Remove LV03                            |
-|    Diverses   |            Atom Feeds           |                        Can be removed.                          |
+|     Vector    |               STAC              | - To be discussed during the dedicated Workshop.                |
+|     Raster    |           OGC API Maps          | - Should be integrated in a backlog or annex document           |
+|     Raster    |        OGC API Coverages        | - Should be integrated in a backlog or annex document           |
+|     Raster    |           OGC API EDR           | - Should be integrated the document                             |
+|     Tiles     |          OGC API Tiles          | - Should be integrated in a backlog or annex document           |
+|     Tiles     |          Tiling Schema          | - Should be integrated in a backlog or annex document           |
+|    Metadata   |               GM03              | - Dedicated standard under revision.                            |
+|    Styling    |          OGC API Styles         | - Should be integrated in a backlog or annex document           |
+|    Styling    | Symbology Conceptual Core Model | - Should be integrated in a backlog or annex document           |
+|    Diverses   |           OGC GeoPose           | - Should be integrated in a backlog or annex document           |
+|    Diverses   |          OGC Geopackage         | - To be discussed during the dedicated Workshop.                |
+|    Diverses   |        OGC API Processes        | - To be discussed during the dedicated Workshop.                |
+|    Diverses   |       OGC SensorThings API      | - To be discussed during the dedicated Workshop.                |
+|    Diverses   |           Linked Data           | - To be discussed during the dedicated Workshop.                |
+|    Diverses   |   Cloud Optimized Data Formats  | - To be discussed during the dedicated Workshop.                |
+|    Diverses   |         Reference frame         | - Remove LV03                                                   |
+|    Diverses   |            Atom Feeds           | - Can be removed.                                               |
 
 
 ### Additional standards and case studies
@@ -174,7 +174,7 @@ In addition to this list, it was decided to consider additional use cases and st
 These use cases and standards will be discussed in dedicated workshops.
 
 |       Use case, data type      |                                                                                     Standard, Link[^1]                                                                                    |
-|:------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 3D point clouds                | [COPC](https://copc.io/)                                                                                                                                                                  |
 | 3D picture                     | [GeoPose](https://github.com/opengeospatial/GeoPose)                                                                                                                                      |
 | Height reference system        | [LN02](https://www.swisstopo.admin.ch/en/knowledge-facts/surveying-geodesy/reference-frames/local/ln02.html)                                                                              |
@@ -194,7 +194,7 @@ These use cases and standards will be discussed in dedicated workshops.
 | First & Last names |                     Considerations                           |
 |--------------------|--------------------------------------------------------------|
 | Raphaël Arnaud     | - An invitation (outlook) to the workshops would be appreciated.|
-| Pasquale Di Donnato| - It is proposed to use github to review the report. <br>- The current version will be converted to asciidoc and integrated into a repository.|
+| Pasquale Di Donnato| - It is proposed to use github to review the report. <br>- The current version will be converted to asciidoc and integrated into a repository.git |
 
 ## Conclusion
 
