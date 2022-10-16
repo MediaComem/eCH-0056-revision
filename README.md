@@ -6,6 +6,8 @@ The aim of this repository is to centralise all information related to the vario
 
 📌[Haus der Kantone,Speichergasse 6, 3011 Bern](https://test.map.geo.admin.ch/?lang=en&topic=ech&zoom=12.70&crosshair=marker&lon=7.442159509352746&lat=46.950550950909914)
 
+<iframe src='https://test.map.geo.admin.ch/?lang=en&topic=ech&zoom=12.70&crosshair=marker&lon=7.442159509352746&lat=46.950550950909914' width='400' height='300' frameborder='0' style='border:0'></iframe>
+
 ## Agenda
 
 The detailed programme can be found [below](https://mediacomem.github.io/eCH-0056-revision/#detailed-programme--presentation-materials).
