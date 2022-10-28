@@ -134,7 +134,7 @@ A discussion took place on some additional elements to be included to the eCH-00
 | First & Last names  |                     Considerations                                   |
 |---------------------|----------------------------------------------------------------------|
 | Maria Klonner       | - Reference frame & Height reference system should not be forgotten. |
-| Pasquale Di Donnato | - Delivering INTERLIS-GML is in principle impossible                 |
+| Pasquale Di Donnato | - Delivering INTERLIS-GML via WFS is a very complex task and it's not supported by every GIS Server.                 |
 | Beat Tschanz        | - STAC can be used to upload INTERLIS files                          |
 | Stefan Ziegler      | - One should have feature services that can be used.                 |
 | Beat Tschanz        | - Adress and transformation services must be considered              |
@@ -164,7 +164,7 @@ The discussions resulted in the following decisions:
 |    Diverses   |           Linked Data           | - To be discussed during the dedicated Workshop.                |
 |    Diverses   |   Cloud Optimized Data Formats  | - To be discussed during the dedicated Workshop.                |
 |    Diverses   |         Reference frame         | - Remove LV03                                                   |
-|    Diverses   |            Atom Feeds           | - Can be removed.                                               |
+|    Diverses   |            Atom Feeds           | - To be discussed.                                               |
 
 
 ### Additional standards and case studies
