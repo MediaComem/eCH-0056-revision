@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
+    <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
+    <title>Smapshot - OGC APIs</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      /* a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      } */
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: title
+layout: true
+class: center, middle, inverse
+---
+#Smapshot API
+## OGC API implementation POC
+Stat of work<br>31-10-2022
+---
+layout:false
+class: left, top
+
+## Content
+
+0. Motivations
+0. Targeted standards and associated collections 
+0. pygeoapi
+0. Data Access
+  0. Swagger UI
+  0. Open Layers
+  0. QGIS
+0. Lessons learned
+0. Future work
+---
+class: left, top
+
+## 1. Motivations
+
+- Compliance with OGC API
+- Interoperability
+- Easier development/integration.red[*]
+
+.footnote[.red[*]<sub><sup>Advanced Tools/Import of [https://map.geo.admin.ch](https://map.geo.admin.ch)?</sup></sub>]
+---
+class: left, top
+
+## 2. Targeted standards and associated collections
+
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+  .tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+    font-family:'Droid Serif';font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+    font-family:'Droid Serif';font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg .tg-ao2g{border-color:#333333;text-align:center;vertical-align:top}
+  .tg .tg-de2y{border-color:#333333;text-align:left;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap" align="center"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-ao2g">Collection</th>
+    <th class="tg-ao2g">Type</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/images_location" target="_blank" rel="noopener noreferrer">Images location</a></td>
+    <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Features</a></td>
+  </tr>
+  <tr>
+    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/viewshed_simple" target="_blank" rel="noopener noreferrer">Images viewshed</a></td>
+    <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Features</a></td>
+  </tr>
+  <tr>
+    <td class="tg-ao2g"><a href="Images footprint" target="_blank" rel="noopener noreferrer">Images footprint</a></td>
+    <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Features</a></td>
+  </tr>
+  <tr>
+    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/collections_metadata" target="_blank" rel="noopener noreferrer">Collection metadata</a></td>
+    <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Features</a></td>
+  </tr>
+  <tr>
+    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/owners_metadata" target="_blank" rel="noopener noreferrer">Owners metadata</a></td>
+    <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Records</a></td>
+  </tr>
+  <tr>
+    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/photographers_metadata" target="_blank" rel="noopener noreferrer">Photographers metadata</a></td>
+    <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Records</a></td>
+  </tr>
+  <tr>
+    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/company_metadata" target="_blank" rel="noopener noreferrer">Company metadata</a></td>
+    <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Records</a></td>
+  </tr>
+  <tr>
+    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/geometadata" target="_blank" rel="noopener noreferrer">Geometadata</a></td>
+    <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Records</a></td>
+  </tr>
+</tbody>
+</table></div>
+
+### 2.1 To be potentially implemented:
+
+- OGC API Tiles (images location vectortiles)
+- OGC API 3D Tiles (quantized mesh, swissbuildings3d)
+---
+class: left, top
+
+## 3. pygeoapi
+
+
+- Python server implementation of the OGC APIs<br>
+- Initiated by Tom Kralidis in 2018
+- RESTful OGC API endpoint using OpenAPI, GeoJSON, and HTML<br>
+- Open source and released under an MIT license
+
+<!-- <p style="text-align:left;"><img src="https://dive.pygeoapi.io/assets/images/pygeoapi-logo.png" alt="pygeoapi-logo" width="40%"></p> -->
+<p style="text-align:center;"><iframe src="https://demo.pygeoapi.io/" width="100%" height="400" style="border:1px solid black;"><a href="https://demo.pygeoapi.io/"></a></iframe></p>
+
+???
+pygeoapi is a Python server implementation of the OGC API suite of standards.
+The project emerged as part of the next generation OGC API efforts in 2018 and provides the capability for organizations to deploy a RESTful OGC API endpoint using OpenAPI, GeoJSON, and HTML.
+pygeoapi is open source and released under an MIT license.
+---
+class: left, top
+
+## 4. Data Access
+### 4.1 Swagger UI
+
+- https://ogc.heig-vd.ch/pygeoapi/openapi?f=html
+- Some differences with the current API
+
+### 4.2 Open Layers
+
+<iframe height="350" style="width: 100%;" scrolling="yes" title="OGC API Features Open Layers integration" src="https://codepen.io/MediaComem/embed/OJEydMM?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/MediaComem/pen/OJEydMM">
+  OGC API Features Open Layers integration</a> by Ingénierie des médias (<a href="https://codepen.io/MediaComem">@MediaComem</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+---
+class: left, top
+
+## 4. Data Access
+### 4.2 QGIS
+
+#### 4.2.1 OGC API Records
+
+0. Browse: `Web`>`Metasearch`>`Metasearch` in the toolbar
+0. Create a new connection
+0. Specify the following url: `https://ogc.heig-vd.ch/pygeoapi/collections/collections_metadata`.red[*]
+<p style="text-align:center;"><img src="./images/oa-records-connection-metadata.png" alt="OGC API Records connection QGIS" width="35%"></p>
+
+
+<br>.footnote[.red[*]<sub><sup>Depending your QGIS version, you may encounter some problems.</sup></sub>]
+
+---
+class: left, top
+
+## 4. Data Access
+### 4.2 QGIS
+
+#### 4.2.1 OGC API Features
+
+0. Browse: `Layer`>`Add Layer`>`Add WFS Layer` in the toolbar
+0. Create a new server connection
+0. Specify the following url: `https://ogc.heig-vd.ch/pygeoapi`
+
+<p style="text-align:center;"><img src="./images/oa-feat-connection-qgis.png" alt="OGC API Features connection QGIS" width="70%"></p>
+
+---
+class: left, top
+
+## 5. Lessons learned
+
+- Relatively easy to deploy<br><br>
+- Easier integration into common clients (QGIS, OpenLayers)<br><br>
+- 3D datas<br><br>
+- [OGC API - Features - Part 3: Filtering and the Common Query Language (CQL)](https://portal.ogc.org/files/96288#cql-core)
+---
+class: left, top
+
+## 6. Future work
+
+- Building an interactive popup in the [Open Layers Client](https://codepen.io/MediaComem/pen/OJEydMM)<br><br>
+- [OGC API - Features - Part 3: Filtering and the Common Query Language (CQL)](https://portal.ogc.org/files/96288#cql-core)<br><br>
+  - Use case: Geolocated images in the vicinity of a route<br><br> 
+- Implementing the API with Node Express & [Sequelize](https://sequelize.org/)
+
+.pull-left[
+<p style="text-align:center;"><img src="https://nodejs.org/static/images/logo.svg" alt="Sequelize logo" width="90%"></p>
+]
+.pull-right[
+<p style="text-align:center;"><img src="https://sequelize.org/img/logo.svg" alt="Sequelize logo" width="50%"></p>
+]
+---
+name: last-page
+template: inverse
+class: center, middle, inverse
+
+## That's all for now folks!
+
+    </textarea>
+    <script src="downloads/remark-latest.min.js"></script>
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="remark.language.js"></script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        }) ;
+    </script>
+  </body>
+</html>
