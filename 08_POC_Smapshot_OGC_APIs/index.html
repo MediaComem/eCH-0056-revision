@@ -179,7 +179,7 @@ class: left, top
     <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Features</a></td>
   </tr>
   <tr>
-    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/viewshed_simple" target="_blank" rel="noopener noreferrer">Images viewshed</a></td>
+    <td class="tg-ao2g"><a href="https://ogc.heig-vd.ch/pygeoapi/collections/images_viewshed_simple" target="_blank" rel="noopener noreferrer">Images viewshed</a></td>
     <td class="tg-ao2g"><a href="" target="_blank" rel="noopener noreferrer">OGC API Features</a></td>
   </tr>
   <tr>
@@ -224,7 +224,6 @@ class: left, top
 - RESTful OGC API endpoint using OpenAPI, GeoJSON, and HTML<br>
 - Open source and released under an MIT license
 
-<!-- <p style="text-align:left;"><img src="https://dive.pygeoapi.io/assets/images/pygeoapi-logo.png" alt="pygeoapi-logo" width="40%"></p> -->
 <p style="text-align:center;"><iframe src="https://demo.pygeoapi.io/" width="100%" height="400" style="border:1px solid black;"><a href="https://demo.pygeoapi.io/"></a></iframe></p>
 
 ???
@@ -281,12 +280,21 @@ class: left, top
 ---
 class: left, top
 
+## 4. Data Access
+### 4.3 CQL Filtering
+
+<p style="text-align:center;"><iframe src="https://clydedacruz.github.io/openstreetmap-wkt-playground/" width="100%" height="300" style="border:1px solid black;"><a href="https://clydedacruz.github.io/openstreetmap-wkt-playground/"></a></iframe></p>
+<sup><sub>https://ogc.heig-vd.ch/pygeoapi/collections/images_footprint/items?bbox=7.454385291345676,46.677581212968136,7.867799257607846,46.83661250958942&filter=CROSSES(footprint,LINESTRING(7.63763%2046.755226,7.636992%2046.756444))&f=json</sub></sup>
+---
+class: left, top
+
 ## 5. Lessons learned
 
 - Relatively easy to deploy<br><br>
 - Easier integration into common clients (QGIS, OpenLayers)<br><br>
 - 3D datas<br><br>
 - [OGC API - Features - Part 3: Filtering and the Common Query Language (CQL)](https://portal.ogc.org/files/96288#cql-core)
+- PostgreSQL `JSON` datatype not supported by pygeoapi
 ---
 class: left, top
 
@@ -294,7 +302,7 @@ class: left, top
 
 - Building an interactive popup in the [Open Layers Client](https://codepen.io/MediaComem/pen/OJEydMM)<br><br>
 - [OGC API - Features - Part 3: Filtering and the Common Query Language (CQL)](https://portal.ogc.org/files/96288#cql-core)<br><br>
-  - Use case: Geolocated images in the vicinity of a route<br><br> 
+  - Use case: Geolocated images in the vicinity of a route✅<br><br> 
 - Implementing the API with Node Express & [Sequelize](https://sequelize.org/)
 
 .pull-left[
