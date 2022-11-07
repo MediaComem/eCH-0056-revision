@@ -33,8 +33,7 @@ Peter Staub clarified the position of the KGK, which had been forwarded in advan
 | Romedi Filli       | - Should WxS standards still be used?          |
 | Maxime Collombin   | - the document ecH-0056 must comply with the requirements<br>- The revision process should be scalable and linked to technological developments. | 
 | Beat Tschanz       | - It is important to identify what is not or what is no longer relevant.<br>- One must anticipate technological change.                          |
-| Zimil Bordoloi     | - It is important to identify what is not or what is no longer relevant.<br>- One must anticipate technological change.                          |   
-- Software developments should be considered.<br>- The reviewing process should be agile.<br>Standards also condition the softwares development.                        |
+| Zimil Bordoloi     | - It is important to identify what is not or what is no longer relevant.<br>- One must anticipate technological change.<br>- Software developments should be considered.<br>- The reviewing process should be agile.<br>Standards also condition the softwares development.                        |
 | Romedi Filli       | - swisstopo no longer wants Atom feeds.<br>- STAC should be included in the eCH-0056 new version.<br>- An important thing is that we can stick to standards.<br>With STAC something is coming and Atom Feeds can then drop out.|
 
 ## GeoIG und GeoIV
@@ -97,7 +96,7 @@ The results of the kick-off meeting were presented and the following discussion 
 
 | First & Last names | Considerations                         |
 |--------------------|----------------------------------------|
-| Zimil Bordoloi     |- OGC API Maps is not very advanced and should be integrated in the backlog document.|
+| Zimil Bordoloi     | - OGC API Maps is not very advanced and should be integrated in the backlog document.|
 | Jens Ingensand     | - OGC API Tiles is quite advanced, might be soon approved.|
 | Beat Tschanz       | - What is the use of Atom Feeds?       |
 | Jens Ingensand     | - Atom Feeds are not really used.      |
@@ -112,7 +111,7 @@ The results of the kick-off meeting were presented and the following discussion 
 
 | First & Last names | Considerations                         |
 |--------------------|----------------------------------------|
-|Maxime Collombin    | - the information about data Historization must be updated<br>- [OGC API Features](https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_parameter_datetime) includes the `datetime` parameter|
+|Maxime Collombin    | - The information about data Historization must be updated<br>- [OGC API Features](https://docs.opengeospatial.org/is/17-069r4/17-069r4.html#_parameter_datetime) includes the `datetime` parameter|
 | Beat Tschanz       | - Data historization should not to be considered<br>- REFRAME should not to be considered<br>- the notion of standard quality too<br>- Point clouds should not be considered<br>- 3D pictures should not be considered<br>- LN02 should be removed<br>- Adressservices should be looked at<br>- 3D Gebäudemodelle should not be considered<br>- 3D Mesh: should be looked at<br>- Positioning services should be removed as well as section 6.13<br>- Quality: INTERLIS files via STAC                        |
 
 ## Evaluation criteria
@@ -121,9 +120,9 @@ A discussion took place on the standards to be considered in the context of the 
 
 | First & Last names | Considerations                         |
 |--------------------|----------------------------------------|
-| Peter Staub        | - one should integrates the notion of transaction<br>- WFS-T is not part of the actual eCH-0056 version and can be integrated in the new version<br>- OGC API Features transaction is not yet validated but could be potentially integrated in the new version.     |
+| Peter Staub        | - One should integrates the notion of transaction<br>- WFS-T is not part of the actual eCH-0056 version and can be integrated in the new version<br>- OGC API Features transaction is not yet validated but could be potentially integrated in the new version.     |
 | Oliver Grimm       | - We need to be more specific<br>- The use cases are important too. |
-| Jens Ingenand      | - - Some of the standards discussed today will be dealt with in more detail in future workshops. | 
+| Jens Ingenand      | - Some of the standards discussed today will be dealt with in more detail in future workshops. | 
 | Frank Gottsmann    | There should be an iterative revision of the eCH-0056 document to better accommodate the [OGC standards Roadmap](https://www.ogc.org/roadmap).                                                     |
 | Beat Tschanz       | - The project core team should define what can be adapted and standardised<br>- many other services are not in the list<br>- 3 aspects are crucial<br>- metadata<br>- projection systems<br>- search services<br>- the recommandations must be result-oriented.     |
 | Zimil Bordoloi     | - Demand is strong for geoservices.     |
