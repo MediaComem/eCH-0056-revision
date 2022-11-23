@@ -10,12 +10,12 @@
 | First & Last names | Organisation                         |
 |--------------------|--------------------------------------|
 | Beat Tschanz       | SGS, swisstopo (KOGIS)               |
-| Fidi Romelli       | Kt.Schaffhausen                      |
 | Frank Gottsmann    | Geostandards.ch, swisstopo (KOGIS)   |
 | Jens Ingensand     | HEIG-VD                              |
 | Maxime Collombin   | HEIG-VD                              |
 | Oliver Grimm       | Geowerkstatt                         |
 | Peter	Staub        | Geostandards.ch, KGK                 |
+| Romelli Fidi       | Kt.Schaffhausen                      |
 | Zimil Bordoloi     | Stadt Luzern                         |
 
 ## Meeting notes
