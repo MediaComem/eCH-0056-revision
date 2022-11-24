@@ -29,7 +29,7 @@
 ## OGC API Maps
 
 Jens Ingensand presents the main differences between WMS and OGC API Maps and points out that the standardisation process is not very advanced for OGC API Maps.
-An important point is that the GetFeatureInfo operation should no longer be included in OGC API Maps. More information can be found [here](https://github.com/opengeospatial/ogcapi-maps/issues/81).
+An important point is that the GetFeatureInfo operation would no longer be included in OGC API Maps. More information can be found [here](https://github.com/opengeospatial/ogcapi-maps/issues/81).
 
 The following exchanges take place:
 
@@ -133,7 +133,7 @@ Jens Ingensand presents the proposals for changes from the Core Project Team.
 
 | First & Last names |                     Considerations                                                                 |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Pasquale Di Donato | - The NGDI uses currently non-standardised 3D tiles. It would be nice to test the [OGC 3D Tiles](https://docs.opengeospatial.org/cs/18-053r2/18-053r2.html) specification.|
+| Pasquale Di Donato | - It would be nice to test the [OGC 3D Tiles](https://docs.opengeospatial.org/cs/18-053r2/18-053r2.html) specification.|
 | Pasquale Di Donato | - Mentions a need regarding address research.                                                       |
 | Maxime Collombin   | - Mentions the [Geocoding API SWG](https://www.ogc.org/projects/groups/geocodeapiswg).              |
 | Jens Ingensand     | - Jens points out that no standards currently exist.                                                |
