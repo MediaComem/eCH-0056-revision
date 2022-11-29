@@ -17,7 +17,7 @@
 | Oliver Grimm       | Geowerkstatt                         |
 | Pasquale Di Donato | swisstopo (KOGIS)                    |
 | Rémy Baud          | swisstopo                            |
-| Romelli Fidi       | Kt.Schaffhausen                      |
+| Romedi Filli       | Kt.Schaffhausen                      |
 | Stefan Ziegler     | Amt für Geoinformation Kt. Solothurn |
 | Zimil Bordoloi     | Stadt Luzern                         |
 
