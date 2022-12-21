@@ -60,8 +60,7 @@ Quelles sont les questions auxquelles on doit répondre?
 | Pasquale Di Donnato | - We must define the zoom levels for the cantons and municipalities |
 | Pia Bereuter        | - Currently the zoom levels defined in eCH-0056 are not accessible anywhere. <br> - They should be made more easily accessible |
 | Pasquale Di Donnato | - We should define a tile matrix and publish it to the OGC registry |
-| Luke Seelenbinder   | - In the context of client-level integration, it would be interesting to consider the most widely used solutions
-<br> - OpenLayers is not widely used.<br>- It would be interesting to consider ESRI
+| Luke Seelenbinder   | - In the context of client-level integration, it would be interesting to consider the most widely used solutions<br> - OpenLayers is not widely used.<br>- It would be interesting to consider ESRI
 | Jens Ingensand      | - Jens mentions that this should be feasible with the ESRI JS API |
 | Luke Seelenbinder   | - Luke recommends using a solution that works with PostGIS as a backend |
 | Pasquale Di Donnato | - Pasquale proposes to test the combination of services configured with different resolution and top left corners. |
