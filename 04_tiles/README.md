@@ -52,7 +52,7 @@ Following the presentation, the following exchanges took place.
 
 ## POC (Proof of concept)
 
-Quelles sont les questions auxquelles on doit répondre?
+What are the questions to be answered?
 
 | First & Last names  | Considerations                         |
 |---------------------|----------------------------------------|
