@@ -21,7 +21,7 @@
 
 ## Next meeting
 
-| 23.02.23 | Misc topics |
+| 23.02.23 | Styles & misc topics |
 |----------|-------------|
 
 ## Presentation
