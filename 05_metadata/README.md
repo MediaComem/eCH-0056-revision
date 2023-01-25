@@ -13,10 +13,10 @@
 | Maxime Collombin    | HEIG-VD        |
 | Pasquale	Di Donato |	swisstopo      |
 | Romedi Filli        | Kt.Schaffhausen|
-| Michel Gysi         | swisstopo      |
-| Frank	Gottsmann	  | swisstopo      |
+| Michael Gysi        | swisstopo      |
+| Frank	Gottsmann	    | swisstopo      |
 | Oliver Grimm        | Geowerkstatt   |
-| Jens Ingensand	  | HEIG-VD        |
+| Jens Ingensand	    | HEIG-VD        |
 | Ken Kaufmann        |	Ruag           |
 
 ## Next meeting
@@ -83,7 +83,7 @@ The discussion then turned to the question of the eCH process and the integratio
 | Pasquale Di Donato  | - He asks what to do with the newly approved OGC standards. |
 | Romedi Fidi         | - He asks what should be done with the standards being currently in a draft status. |
 | Oliver Grimm        | - He mentions that the eCH-0056 process should be more agile & tools ready. |
-| Jens Ingenand       | - He mentions that all of the OGC API standards are not all on the same level. Some are apporved, others are still in a draft stage. |
+| Jens Ingenand       | - He mentions that all of the OGC API standards are not all on the same level. Some are approved, others are still in a draft stage. |
 | Pasquale Di Donato  | - He asks more specifically what to do with OGC API Features. |
 | Romedi Fidi         | - He mentions that it is important to know the new standards and mechanisms for the cantons. |
 | Ken Kaufmann        | - He asks which software manufacturers already support these standards. |
