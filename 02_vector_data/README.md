@@ -15,7 +15,7 @@
 | Maxime Collombin   | HEIG-VD                              |
 | Oliver Grimm       | Geowerkstatt                         |
 | Peter	Staub        | Geostandards.ch, KGK                 |
-| Romelli Fidi       | Kt.Schaffhausen                      |
+| Romedi Filli       | Kt.Schaffhausen                      |
 | Zimil Bordoloi     | Stadt Luzern                         |
 
 ## Meeting notes

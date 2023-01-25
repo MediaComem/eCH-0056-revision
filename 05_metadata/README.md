@@ -12,7 +12,7 @@
 | Raphaël Arnaud      | swisstopo      |
 | Maxime Collombin    | HEIG-VD        |
 | Pasquale	Di Donato |	swisstopo      |
-| Romelli Fidi        | Kt.Schaffhausen|
+| Romedi Filli        | Kt.Schaffhausen|
 | Michel Gysi         | swisstopo      |
 | Frank	Gottsmann	  | swisstopo      |
 | Oliver Grimm        | Geowerkstatt   |
@@ -35,7 +35,7 @@ Following the presentation, the following exchanges took place.
 
 | First & Last names  | Considerations                         |
 |---------------------|----------------------------------------|
-| Romelli Fidi        | - Is it possible to establish a connection in QGIS ?                         |
+| Romedi Filli        | - Is it possible to establish a connection in QGIS ?                         |
 | Pasquale Di Donato | - It doesn't work with QGIS but it should work with Leaflet. |
 | Maxime Collombin    | - He mentions that it is possible to establish a connection to an OGC API Tiles collection in QGIS thanks to its GDAL driver.<br> - He also mentions that an [example](https://ogc.heig-vd.ch/oa-tiles/OGC-API-Tiles/#access-ogc-api-tiles-from-qgis-through-gdal) is included in the NGDI-20-60 OGC API Testbed Platform.  |
 | Maxime Collombin    | - He proposes to integrate the tile matrix set into the OGC registry. |
@@ -58,7 +58,7 @@ Following the presentation, the following exchanges took place.
 | Maxime Collombin    | - He mentions that it is possible with pygeoapi (early implementation of OGC API Records). |
 | Maxime Collombin    | - He  asks if we should  keep the META-04 recommendation for the revision (which will probably not include OGC API Records.) |
 | Pasquale Di Donato | - He proposes to keep the recommendation but as optional. |
-| Romelli Fidi        | - Romedi asked if it is possible to reference metadata and associated services for each layer of a WxS service. |
+| Romedi Filli        | - Romedi asked if it is possible to reference metadata and associated services for each layer of a WxS service. |
 | Pasquale Di Donato | - He says yes and then makes a demonstration using the swisstopo WMS.  |
 | Oliver Grimm        | - He asks if it is coherent to provide metadata for each collection/layer? |
 | Oliver Grimm        | - He proposes to modify META-01 & META-02 to make them more generic. |
