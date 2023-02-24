@@ -82,7 +82,7 @@ Following the presentation, the following exchanges took place.
 | Maxime Collombin    | - answers that it is possible to download the style and that these possibilities are also offered by vector tiles. |
 | Pasquale Di Donato  | - proposes to make styling changes for version 5.0 as many standards are still under revision. |
  
-## Nouvelle version du document
+## eCH-0056 version 4.0
 
 Pasquale Di Donato presents the proposed changes to eCH-0056.
 
