@@ -25,7 +25,7 @@ The detailed programme can be found [below](https://mediacomem.github.io/eCH-005
 | 3 | 22-11-2022 | Raster data |  [presentation material](https://github.com/MediaComem/eCH-0056-revision/blob/main/03_raster_data/WS-Raster-ppt.pdf) <br/> [meeting notes](https://github.com/mediacomem/eCH-0056-revision/blob/main/03_raster_data/README.md) |
 | 4 | 22-12-2022 | Tiles |  [presentation material](https://mediacomem.github.io/eCH-0056-revision/04_tiles/WS-Tiles-ppt.pdf) <br/> [meeting notes](https://github.com/mediacomem/eCH-0056-revision/blob/main/04_tiles/README.md) |
 | 5 | 24-01-2023 | Metadata |  [presentation material](https://github.com/MediaComem/eCH-0056-revision/blob/main/05_metadata/eCH-0056-WS-Metadaten.pdf) <br/> [meeting notes](https://github.com/mediacomem/eCH-0056-revision/blob/main/05_metadata/README.md) |
-| 6 | 23-02-2023 | Styles & diverses topics |  [presentation material]() <br/> [meeting notes](https://github.com/MediaComem/eCH-0056-revision/tree/main/06_diverses_topics_styling/README.md) |
+| 6 | 23-02-2023 | Styles & diverses topics |  [presentation material](https://github.com/MediaComem/eCH-0056-revision/blob/main/06_diverses_topics_styling/WS-Div-Styles.pdf) <br/> [meeting notes](https://github.com/MediaComem/eCH-0056-revision/tree/main/06_diverses_topics_styling/README.md) |
 | 7 | 27-04-2023 | Reserve 1 |  presentation material <br/> meeting notes |
 | 8 | 25-05-2023 | Reserve 2 |  presentation material <br/> meeting notes |
 | 9 | 20-06-2023 | Reserve 3 |  presentation material <br/> meeting notes |
