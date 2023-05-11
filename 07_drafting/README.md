@@ -1,4 +1,4 @@
-# Redaktion 
+# Drafting 
 ## Meeting notes
 
 ## Date & Time
