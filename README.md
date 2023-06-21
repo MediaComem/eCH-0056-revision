@@ -27,5 +27,6 @@ The detailed programme can be found [below](https://mediacomem.github.io/eCH-005
 | 5 | 24-01-2023 | Metadata |  [presentation material](https://github.com/MediaComem/eCH-0056-revision/blob/main/05_metadata/eCH-0056-WS-Metadaten.pdf) <br/> [meeting notes](https://github.com/mediacomem/eCH-0056-revision/blob/main/05_metadata/README.md) |
 | 6 | 23-02-2023 | Styles & diverses topics |  [presentation material](https://github.com/MediaComem/eCH-0056-revision/blob/main/06_diverses_topics_styling/WS-Div-Styles.pdf) <br/> [meeting notes](https://github.com/MediaComem/eCH-0056-revision/tree/main/06_diverses_topics_styling/README.md) |
 | 7 | 09-05-2023 | Drafting |  [presentation material](https://github.com/MediaComem/eCH-0056-revision/blob/main/07_drafting/WS-Drafting.pdf) <br/> [meeting notes](https://github.com/MediaComem/eCH-0056-revision/tree/main/07_drafting/README.md) |
+| 8 | 26-05-2023 | Drafting | - | 
 
 > **_NOTE:_** For further information, please contact the team [Geostandards.ch](https://geostandards.ch/) ([F.Gottsmann or P. Staub](standardisierung@geostandards.ch))
